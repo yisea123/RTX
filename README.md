@@ -1,4 +1,4 @@
-# RTX
+# CMSIS_RTOS
 Best RTOS for Crotex-M
 
 
