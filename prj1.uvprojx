@@ -111,12 +111,12 @@
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
           <SimDllArguments> -REMAP</SimDllArguments>
-          <SimDlgDll>DCM.DLL</SimDlgDll>
-          <SimDlgDllArguments>-pCM3</SimDlgDllArguments>
+          <SimDlgDll>DARMSTM.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pSTM32F103RC</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
           <TargetDllArguments></TargetDllArguments>
-          <TargetDlgDll>TCM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pCM3</TargetDlgDllArguments>
+          <TargetDlgDll>TARMSTM.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pSTM32F103RC</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\bsp;.\user</IncludePath>
+              <IncludePath>.\bsp;.\user;.\basic_thread</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,9 +387,34 @@
               <FilePath>.\user\main.c</FilePath>
             </File>
             <File>
+              <FileName>uarttestthread.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\uarttestthread.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>basic_thread</GroupName>
+          <Files>
+            <File>
               <FileName>ledthread.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\user\ledthread.c</FilePath>
+              <FilePath>.\basic_thread\ledthread.c</FilePath>
+            </File>
+            <File>
+              <FileName>uartreceivethread.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\basic_thread\uartreceivethread.c</FilePath>
+            </File>
+            <File>
+              <FileName>uartsendthread.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\basic_thread\uartsendthread.c</FilePath>
+            </File>
+            <File>
+              <FileName>virtualtimerthread.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\basic_thread\virtualtimerthread.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -402,9 +427,9 @@
               <FilePath>.\bsp\led.c</FilePath>
             </File>
             <File>
-              <FileName>bsp.c</FileName>
+              <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\bsp\bsp.c</FilePath>
+              <FilePath>.\bsp\usart.c</FilePath>
             </File>
           </Files>
         </Group>

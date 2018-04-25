@@ -1,6 +1,8 @@
 #include "ledthread.h"   
  
 void led_thread (void const *argument);                             // thread function
+
+
 osThreadId led_thread_id;                                          // thread id
 osThreadDef (led_thread, osPriorityNormal, 1, 0);                   // thread object
 
@@ -13,7 +15,7 @@ int Init_led_thread (void) {
 }
 
 void led_thread (void const *argument) {
-
+	LED_Initialize ();
   while (1) 
 	{
 		LED_On(0);

@@ -216,6 +216,8 @@
 void os_idle_demon (void) {
  
   for (;;) {
+		//__wfe();//(wait for interrupt) 
+		//instruction will halt the CPU until there is a peripheral or SysTick interrupt
     /* HERE: include optional user code to be executed when no thread runs.*/
   }
 }

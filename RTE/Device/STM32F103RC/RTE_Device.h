@@ -49,7 +49,7 @@
 #define RTE_USART1                       0
 
 //   <o> USART1_TX Pin <0=>Not Used <1=>PA9
-#define RTE_USART1_TX_PORT_ID_DEF       0
+#define RTE_USART1_TX_PORT_ID_DEF       1
 #if    (RTE_USART1_TX_PORT_ID_DEF == 0)
 #define RTE_USART1_TX_DEF               0
 #elif  (RTE_USART1_TX_PORT_ID_DEF == 1)
@@ -61,7 +61,7 @@
 #endif
 
 //   <o> USART1_RX Pin <0=>Not Used <1=>PA10
-#define RTE_USART1_RX_PORT_ID_DEF       0
+#define RTE_USART1_RX_PORT_ID_DEF       1
 #if    (RTE_USART1_RX_PORT_ID_DEF == 0)
 #define RTE_USART1_RX_DEF               0
 #elif  (RTE_USART1_RX_PORT_ID_DEF == 1)
@@ -199,7 +199,7 @@
 #define RTE_USART2                      0
 
 //   <o> USART2_TX Pin <0=>Not Used <1=>PA2
-#define RTE_USART2_TX_PORT_ID_DEF       0
+#define RTE_USART2_TX_PORT_ID_DEF       1
 #if    (RTE_USART2_TX_PORT_ID_DEF == 0)
 #define RTE_USART2_TX_DEF               0
 #elif  (RTE_USART2_TX_PORT_ID_DEF == 1)
@@ -211,7 +211,7 @@
 #endif
 
 //   <o> USART2_RX Pin <0=>Not Used <1=>PA3
-#define RTE_USART2_RX_PORT_ID_DEF       0
+#define RTE_USART2_RX_PORT_ID_DEF       1
 #if    (RTE_USART2_RX_PORT_ID_DEF == 0)
 #define RTE_USART2_RX_DEF               0
 #elif  (RTE_USART2_RX_PORT_ID_DEF == 1)
@@ -393,7 +393,7 @@
 #define RTE_USART3                      0
 
 //   <o> USART3_TX Pin <0=>Not Used <1=>PB10
-#define RTE_USART3_TX_PORT_ID_DEF       0
+#define RTE_USART3_TX_PORT_ID_DEF       1
 #if    (RTE_USART3_TX_PORT_ID_DEF == 0)
 #define RTE_USART3_TX_DEF               0
 #elif  (RTE_USART3_TX_PORT_ID_DEF == 1)
@@ -405,7 +405,7 @@
 #endif
 
 //   <o> USART3_RX Pin <0=>Not Used <1=>PB11
-#define RTE_USART3_RX_PORT_ID_DEF       0
+#define RTE_USART3_RX_PORT_ID_DEF       1
 #if    (RTE_USART3_RX_PORT_ID_DEF == 0)
 #define RTE_USART3_RX_DEF               0
 #elif  (RTE_USART3_RX_PORT_ID_DEF == 1)
@@ -650,7 +650,7 @@
 #define RTE_UART4_AF_REMAP              AFIO_UNAVAILABLE_REMAP
 
 //   <o> UART4_TX Pin <0=>Not Used <1=>PC10
-#define RTE_UART4_TX_ID                 0
+#define RTE_UART4_TX_ID                 1
 #if    (RTE_UART4_TX_ID == 0)
 #define RTE_UART4_TX                    0
 #elif  (RTE_UART4_TX_ID == 1)
@@ -662,7 +662,7 @@
 #endif
 
 //   <o> UART4_RX Pin <0=>Not Used <1=>PC11
-#define RTE_UART4_RX_ID                 0
+#define RTE_UART4_RX_ID                 1
 #if    (RTE_UART4_RX_ID == 0)
 #define RTE_UART4_RX                    0
 #elif  (RTE_UART4_RX_ID == 1)
@@ -709,7 +709,7 @@
 #define RTE_UART5_AF_REMAP              AFIO_UNAVAILABLE_REMAP
 
 //   <o> UART5_TX Pin <0=>Not Used <1=>PC12
-#define RTE_UART5_TX_ID                 0
+#define RTE_UART5_TX_ID                 1
 #if    (RTE_UART5_TX_ID == 0)
 #define RTE_UART5_TX                    0
 #elif  (RTE_UART5_TX_ID == 1)
@@ -721,7 +721,7 @@
 #endif
 
 //   <o> UART5_RX Pin <0=>Not Used <1=>PD2
-#define RTE_UART5_RX_ID                 0
+#define RTE_UART5_RX_ID                 1
 #if    (RTE_UART5_RX_ID == 0)
 #define RTE_UART5_RX                    0
 #elif  (RTE_UART5_RX_ID == 1)
