@@ -15,12 +15,12 @@ Device:
 
 STM32F103RCT6
 
-#V1.0
+# V1.0
 建立工程模板。
-#V1.1
+# V1.1
 1.增加led的bsp。
 2.增加led的500ms闪烁thread。
-#V1.2
+# V1.2
 1.增加UART的bsp。（包含USART1、USART2、USART3、UART4、UART5）。
 2.增加UART的发送数据thread。
 ————thread可根据传参创建任意的USART（1、2、3、4、5）,默认波特率115200。
