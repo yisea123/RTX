@@ -1,5 +1,5 @@
 #include "virtualtimerthread.h"   
-#include "uartreceivethread.h"   
+#include "uartthread.h"   
 
 void virtualtimer_callback(void const *param);
 osTimerDef(timer0_handle, virtualtimer_callback);

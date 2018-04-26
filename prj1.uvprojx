@@ -402,19 +402,19 @@
               <FilePath>.\basic_thread\ledthread.c</FilePath>
             </File>
             <File>
-              <FileName>uartreceivethread.c</FileName>
+              <FileName>uartthread.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\basic_thread\uartreceivethread.c</FilePath>
+              <FilePath>.\basic_thread\uartthread.c</FilePath>
             </File>
             <File>
-              <FileName>uartsendthread.c</FileName>
+              <FileName>keythread.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\basic_thread\uartsendthread.c</FilePath>
+              <FilePath>.\basic_thread\keythread.c</FilePath>
             </File>
             <File>
-              <FileName>virtualtimerthread.c</FileName>
+              <FileName>timeoutthread.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\basic_thread\virtualtimerthread.c</FilePath>
+              <FilePath>.\basic_thread\timeoutthread.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -430,6 +430,16 @@
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\bsp\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\timer2.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp\key.c</FilePath>
             </File>
           </Files>
         </Group>

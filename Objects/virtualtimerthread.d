@@ -3,7 +3,7 @@
 .\objects\virtualtimerthread.o: C:\Program Files\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS\RTX\INC\cmsis_os.h
 .\objects\virtualtimerthread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\virtualtimerthread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\virtualtimerthread.o: basic_thread\uartreceivethread.h
+.\objects\virtualtimerthread.o: basic_thread\uartthread.h
 .\objects\virtualtimerthread.o: .\bsp\usart.h
 .\objects\virtualtimerthread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\virtualtimerthread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h

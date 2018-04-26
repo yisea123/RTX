@@ -5,10 +5,9 @@
 .\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\main.o: .\basic_thread\ledthread.h
 .\objects\main.o: .\bsp\led.h
-.\objects\main.o: .\basic_thread\uartsendthread.h
-.\objects\main.o: .\bsp\usart.h
-.\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+.\objects\main.o: .\basic_thread\keythread.h
+.\objects\main.o: .\bsp\key.h
+.\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
 .\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\main.o: .\RTE\_project\RTE_Components.h
 .\objects\main.o: C:\Program Files\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm3.h
@@ -41,6 +40,10 @@
 .\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
-.\objects\main.o: .\basic_thread\uartreceivethread.h
-.\objects\main.o: .\basic_thread\virtualtimerthread.h
+.\objects\main.o: .\basic_thread\keythread.h
+.\objects\main.o: .\basic_thread\uartthread.h
+.\objects\main.o: .\bsp\usart.h
+.\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: .\basic_thread\timeoutthread.h
+.\objects\main.o: .\bsp\timer2.h
 .\objects\main.o: user\uarttestthread.h

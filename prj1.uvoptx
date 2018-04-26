@@ -130,7 +130,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>ARMRTXEVENTFLAGS</Key>
-          <Name>-L146 -Z19 -C0 -M0 -T1</Name>
+          <Name>-L146 -Z28 -C0 -M0 -T1</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -179,6 +179,11 @@
           <count>3</count>
           <WinNumber>1</WinNumber>
           <ItemText>uart_receive_timecount</ItemText>
+        </Ww>
+        <Ww>
+          <count>4</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>uart_send_msg</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
@@ -231,6 +236,10 @@
         <Entry>
           <Name>OS Support\System and Thread Viewer</Name>
           <WinId>35905</WinId>
+        </Entry>
+        <Entry>
+          <Name>System Viewer\USART1</Name>
+          <WinId>35903</WinId>
         </Entry>
       </SystemViewers>
       <DebugDescription>
@@ -299,8 +308,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\basic_thread\uartreceivethread.c</PathWithFileName>
-      <FilenameWithoutPath>uartreceivethread.c</FilenameWithoutPath>
+      <PathWithFileName>.\basic_thread\uartthread.c</PathWithFileName>
+      <FilenameWithoutPath>uartthread.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -311,8 +320,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\basic_thread\uartsendthread.c</PathWithFileName>
-      <FilenameWithoutPath>uartsendthread.c</FilenameWithoutPath>
+      <PathWithFileName>.\basic_thread\keythread.c</PathWithFileName>
+      <FilenameWithoutPath>keythread.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -323,8 +332,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\basic_thread\virtualtimerthread.c</PathWithFileName>
-      <FilenameWithoutPath>virtualtimerthread.c</FilenameWithoutPath>
+      <PathWithFileName>.\basic_thread\timeoutthread.c</PathWithFileName>
+      <FilenameWithoutPath>timeoutthread.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -357,6 +366,30 @@
       <bDave2>0</bDave2>
       <PathWithFileName>.\bsp\usart.c</PathWithFileName>
       <FilenameWithoutPath>usart.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>9</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\bsp\timer2.c</PathWithFileName>
+      <FilenameWithoutPath>timer2.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>10</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\bsp\key.c</PathWithFileName>
+      <FilenameWithoutPath>key.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

@@ -22,14 +22,18 @@ Dialog DLL:      TARMSTM.DLL V1.66.0.0
  
 <h2>Project:</h2>
 D:\mypro\STM32\F103\RCT6\RTX\prj1.uvprojx
-Project File Date:  04/25/2018
+Project File Date:  04/26/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Program Files\keil\ARM\ARMCC\Bin'
 Build target 'project'
-compiling uartreceivethread.c...
+compiling timeoutthread.c...
+compiling keythread.c...
+compiling main.c...
+compiling key.c...
+compiling timer2.c...
 linking...
-Program Size: Code=12088 RO-data=560 RW-data=160 ZI-data=5464  
+Program Size: Code=13116 RO-data=584 RW-data=176 ZI-data=6640  
 ".\Objects\prj1.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -89,19 +93,19 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.1.1
 
    * Component: ARM::CMSIS:RTOS:Keil RTX:4.81.1
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MailQueue.c
       Include file:  CMSIS\RTOS\RTX\INC\cmsis_os.h
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Mutex.c
-      Source file:   CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s
-      Include file:  CMSIS\RTOS\RTX\UserCodeTemplates\osObjects.h
       Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MemPool.c
-      Source file:   CMSIS\RTOS\RTX\Templates\RTX_Conf_CM.c
       Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MsgQueue.c
       Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Semaphore.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Thread.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Timer.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\main.c
       Library file:  CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MailQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Timer.c
+      Include file:  CMSIS\RTOS\RTX\UserCodeTemplates\osObjects.h
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\main.c
+      Source file:   CMSIS\RTOS\RTX\Templates\RTX_Conf_CM.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Mutex.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Thread.c
+      Source file:   CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s
 
    * Component: Keil::Device:DMA:1.2
       Include file:  RTE_Driver\DMA_STM32F10x.h
@@ -118,16 +122,16 @@ Package Vendor: Keil
       Source file:   Device\Source\system_stm32f10x.c
 
    * Component: Keil::Device:StdPeriph Drivers:ADC:3.5.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_adc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_adc.c
 
    * Component: Keil::Device:StdPeriph Drivers:BKP:3.5.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_bkp.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_bkp.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_bkp.h
 
    * Component: Keil::Device:StdPeriph Drivers:CAN:3.5.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_can.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_can.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_can.h
 
    * Component: Keil::Device:StdPeriph Drivers:CEC:3.5.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_cec.h
@@ -146,8 +150,8 @@ Package Vendor: Keil
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dbgmcu.h
 
    * Component: Keil::Device:StdPeriph Drivers:DMA:3.5.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dma.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_dma.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_dma.h
 
    * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
@@ -158,15 +162,15 @@ Package Vendor: Keil
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_fsmc.c
 
    * Component: Keil::Device:StdPeriph Drivers:Flash:3.5.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_flash.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_flash.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_flash.c
 
    * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
       Source file:   Device\StdPeriph_Driver\src\misc.c
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
-      Include file:  Device\StdPeriph_Driver\inc\misc.h
-      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
       Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
@@ -189,16 +193,16 @@ Package Vendor: Keil
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
 
    * Component: Keil::Device:StdPeriph Drivers:RTC:3.5.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rtc.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rtc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rtc.c
 
    * Component: Keil::Device:StdPeriph Drivers:SDIO:3.5.0
-      Source file:   Device\StdPeriph_Driver\src\stm32f10x_sdio.c
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_sdio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_sdio.c
 
    * Component: Keil::Device:StdPeriph Drivers:SPI:3.5.0
-      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_spi.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_spi.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_spi.h
 
    * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
@@ -211,7 +215,7 @@ Package Vendor: Keil
    * Component: Keil::Device:StdPeriph Drivers:WWDG:3.5.0
       Include file:  Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
       Source file:   Device\StdPeriph_Driver\src\stm32f10x_wwdg.c
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

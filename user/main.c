@@ -5,9 +5,9 @@
 #define osObjectsPublic                     // define objects in main module
 #include "osObjects.h"                      // RTOS object definitions
 #include "ledthread.h"  
-#include "uartsendthread.h"   
-#include "uartreceivethread.h"   
-#include "virtualtimerthread.h"   
+#include "keythread.h"   
+#include "uartthread.h"   
+#include "timeoutthread.h"  
 
 #include "uarttestthread.h"   
 
@@ -21,7 +21,8 @@ int main (void) {
   osKernelInitialize ();                    // initialize CMSIS-RTOS
   // initialize peripherals here
 	Init_led_thread ();
-	Init_virtualtimer_thread ();
+	Init_key_thread ();
+	Init_timeout_thread ();
 	Init_uart_receive_thread (1);
 	Init_uart_send_thread (1);
 	Init_uart_test_thread ();

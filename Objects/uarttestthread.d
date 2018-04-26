@@ -3,7 +3,7 @@
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS\RTX\INC\cmsis_os.h
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\uarttestthread.o: .\basic_thread\uartreceivethread.h
+.\objects\uarttestthread.o: .\basic_thread\uartthread.h
 .\objects\uarttestthread.o: .\bsp\usart.h
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
@@ -39,4 +39,3 @@
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\uarttestthread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
-.\objects\uarttestthread.o: .\basic_thread\uartsendthread.h
