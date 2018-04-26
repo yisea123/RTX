@@ -1,27 +1,19 @@
 # CMSIS_RTOS
-Best RTOS for Crotex-M
+## Best RTOS for Crotex-M
+## Environment:
+## Software: KEIL ARM 5.25
+## Pack:STM32F1XX_DFP、CMSIS
+## Device:
+## STM32F103RCT6
 
-
-Environment:
-
-Software: KEIL ARM 5.25
-
-
-Pack:STM32F1XX_DFP、CMSIS
-     
-
-Device:
-
-
-STM32F103RCT6
-## 2018.4.24
+# 2018.4.24
 ## V1.0
 ### 建立工程模板。
 ## V1.1
 ### 1.增加led的bsp。<br> 
 ### 2.增加led的500ms闪烁thread。
 
-## 2018.4.25
+# 2018.4.25
 ## V1.2
 ### 1.增加UART的bsp。（包含USART1、USART2、USART3、UART4、UART5）。<br>
 ### 2.增加UART的发送数据thread。
@@ -39,7 +31,7 @@ UART 接受数据thread实现了串口透传，默认每帧数据时间间隔大
 ### 5.增加UART的功能测试thread。<br>
 实现串口回传。<br>
 
-## 2018.4.26
+# 2018.4.26
 ## v1.3
 ### 1.优化串口发送机制，使用串口发送中断，在连续发送字符等待发送完成中断时，线程不占用CPU，提高效率。
 ### 2.增加硬件定时器TIM2的超时机制。
