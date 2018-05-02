@@ -4,6 +4,6 @@
 #include "cmsis_os.h"    
 #include "uartthread.h"   
 
-int Init_uart_test_thread (void);
+int Init_uart_test_thread (uint32_t argument);
 
 #endif

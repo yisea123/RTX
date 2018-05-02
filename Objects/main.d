@@ -46,4 +46,13 @@
 .\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\basic_thread\timeoutthread.h
 .\objects\main.o: .\bsp\timer2.h
+.\objects\main.o: .\basic_thread\luathread.h
+.\objects\main.o: .\bsp\mculua.h
+.\objects\main.o: .\lua-5.3.4\src\lua.h
+.\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main.o: .\lua-5.3.4\src\luaconf.h
+.\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\main.o: .\lua-5.3.4\src\lualib.h
+.\objects\main.o: .\lua-5.3.4\src\lauxlib.h
+.\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: user\uarttestthread.h

@@ -8,6 +8,7 @@
 #include "keythread.h"   
 #include "uartthread.h"   
 #include "timeoutthread.h"  
+#include "luathread.h"   
 
 #include "uarttestthread.h"   
 
@@ -25,7 +26,10 @@ int main (void) {
 	Init_timeout_thread ();
 	Init_uart_receive_thread (1);
 	Init_uart_send_thread (1);
-	Init_uart_test_thread ();
+	Init_lua_thread();
+	Init_uart_receive_thread (2);
+	Init_uart_send_thread (2);	
+	Init_uart_test_thread (2);
   // create 'thread' functions that start executing,
   // example: tid_name = osThreadCreate (osThread(name), NULL);
   osKernelStart ();                         // start thread execution

@@ -28,17 +28,58 @@ void TIM2_Int_Init(void)
 
 void TIM2_IRQHandler(void)   //10us
 {
-	if(uart_receive_timerstart)
-	{
-		uart_receive_timecount++;
-	}
-	if(uart_receive_timecount >= 30) // uart receive frame timeout(300us)
-	{
-		uart_receive_timecount = 0;
-		uart_receive_timerstart = 0;
-		uart_receive_overtime = 1;
-		osSignalSet(timeout_thread_id,0x01); 
-	}
+	#ifdef USE_UART1
+		if(uart1_receive_timerstart)
+		{
+			uart1_receive_timecount++;
+		}
+		if(uart1_receive_timecount >= 30) // uart receive frame timeout(300us)
+		{
+			uart1_receive_timecount = 0;
+			uart1_receive_timerstart = 0;
+			uart1_receive_overtime = 1;
+			osSignalSet(timeout_thread_id,0x01); 
+		}
+	#endif
+	#ifdef USE_UART2
+		if(uart2_receive_timerstart)
+		{
+			uart2_receive_timecount++;
+		}
+		if(uart2_receive_timecount >= 30) // uart receive frame timeout(300us)
+		{
+			uart2_receive_timecount = 0;
+			uart2_receive_timerstart = 0;
+			uart2_receive_overtime = 1;
+			osSignalSet(timeout_thread_id,0x01); 
+		}
+	#endif	
+	#ifdef USE_UART3
+		if(uart3_receive_timerstart)
+		{
+			uart3_receive_timecount++;
+		}
+		if(uart3_receive_timecount >= 30) // uart receive frame timeout(300us)
+		{
+			uart3_receive_timecount = 0;
+			uart3_receive_timerstart = 0;
+			uart3_receive_overtime = 1;
+			osSignalSet(timeout_thread_id,0x01); 
+		}
+	#endif	
+	#ifdef USE_UART4
+		if(uart4_receive_timerstart)
+		{
+			uart4_receive_timecount++;
+		}
+		if(uart4_receive_timecount >= 30) // uart receive frame timeout(300us)
+		{
+			uart4_receive_timecount = 0;
+			uart4_receive_timerstart = 0;
+			uart4_receive_overtime = 1;
+			osSignalSet(timeout_thread_id,0x01); 
+		}
+	#endif		
 	TIM2->SR &= 0XFFFE; //clear update flag
 }
 
