@@ -58,3 +58,13 @@ stdio.h 底层重定向到USART1。<br>
 调整了lua任务堆栈大小，以解决lua任务运行内存不足问题。
 部分底层接口待重写与优化。<br>
 
+# 2018.5.3
+## v1.5
+### 1.优化串口收发thread<br>
+为串口收发thread设置发送完成信号，设置当前串口使用焦点线程，实现互斥，保护Memory pool、Message queue，直到发送完毕才释放。<br>
+增大串口发送线程堆栈。<br>
+优化串口回传的测试线程。<br>
+### 2.为各线程统一分配signal值<br>
+### 3.优化lua解释器<br>
+在串口收发线程机制上重写puts、printf、gets，以适配RTOS，并提升CPU效率。<br>
+增大lua线程堆栈。<br>
