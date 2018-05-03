@@ -29,7 +29,7 @@ void key_thread (void const *argument) {
 			{
 				if(current_key0_focus_thread_id)
 				{
-					osSignalSet(current_key0_focus_thread_id,0x01);
+					osSignalSet(current_key0_focus_thread_id,KEY0_PRESSED_SIGNAL);
 				}
 			}
 		}
@@ -41,7 +41,7 @@ void key_thread (void const *argument) {
 			{
 				if(current_key1_focus_thread_id)
 				{
-					osSignalSet(current_key1_focus_thread_id,0x01);
+					osSignalSet(current_key1_focus_thread_id,KEY1_PRESSED_SIGNAL);
 				}
 			}
 		}		

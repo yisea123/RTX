@@ -17,29 +17,29 @@ void timeout_thread (void const *argument) {
 	TIM2_Int_Init();
   while (1) 
 	{
-		osSignalWait(0x01,osWaitForever);
+		osSignalWait(TIME2_TIMEOUT_SIGNAL,osWaitForever);
 		#ifdef USE_UART1
 			if(uart1_receive_overtime)
 			{
-				osSignalSet(uart1_receive_thread_id,0x01); //send the last signal
+				osSignalSet(uart1_receive_thread_id,UART_RECRIVE_START_SIGNAL); //send the last signal
 			}
 		#endif
 		#ifdef USE_UART2
 			if(uart2_receive_overtime)
 			{
-				osSignalSet(uart2_receive_thread_id,0x01); //send the last signal
+				osSignalSet(uart2_receive_thread_id,UART_RECRIVE_START_SIGNAL); //send the last signal
 			}
 		#endif
 		#ifdef USE_UART3
 			if(uart3_receive_overtime)
 			{
-				osSignalSet(uart3_receive_thread_id,0x01); //send the last signal
+				osSignalSet(uart3_receive_thread_id,UART_RECRIVE_START_SIGNAL); //send the last signal
 			}
 		#endif
 		#ifdef USE_UART4
 			if(uart4_receive_overtime)
 			{
-				osSignalSet(uart4_receive_thread_id,0x01); //send the last signal
+				osSignalSet(uart4_receive_thread_id,UART_RECRIVE_START_SIGNAL); //send the last signal
 			}
 		#endif
   }

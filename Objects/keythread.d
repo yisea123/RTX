@@ -36,5 +36,6 @@
 .\objects\keythread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\keythread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
 .\objects\keythread.o: .\basic_thread\keythread.h
+.\objects\keythread.o: .\basic_thread\rtx_signal.h
 .\objects\keythread.o: C:\Program Files\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS\RTX\INC\cmsis_os.h
 .\objects\keythread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stddef.h

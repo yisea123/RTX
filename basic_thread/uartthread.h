@@ -3,7 +3,7 @@
 
 #include "usart.h"                                     
 #include "cmsis_os.h"     
-
+#include "rtx_signal.h"
 //*************************************************************************************************************//
 #define UART_DATATEMP_SIZE 200
 
@@ -22,6 +22,7 @@ extern osPoolId  uart1_receive_mpool;
 extern osMessageQId  uart1_receive_queue;
 extern osThreadId uart1_send_thread_id;
 extern osThreadId uart1_receive_thread_id; 
+extern osThreadId uart1_current_send_thread_id;
 
 extern uint8_t uart1_frame_start;
 extern uint8_t uart1_receive_timerstart;
@@ -37,6 +38,7 @@ extern osPoolId  uart2_receive_mpool;
 extern osMessageQId  uart2_receive_queue;
 extern osThreadId uart2_send_thread_id;
 extern osThreadId uart2_receive_thread_id; 
+extern osThreadId uart2_current_send_thread_id;
 
 extern uint8_t uart2_frame_start;
 extern uint8_t uart2_receive_timerstart;
@@ -52,6 +54,7 @@ extern osPoolId  uart3_receive_mpool;
 extern osMessageQId  uart3_receive_queue;
 extern osThreadId uart3_send_thread_id;
 extern osThreadId uart3_receive_thread_id; 
+extern osThreadId uart3_current_send_thread_id;
 
 extern uint8_t uart3_frame_start;
 extern uint8_t uart3_receive_timerstart;
@@ -67,6 +70,7 @@ extern osPoolId  uart4_receive_mpool;
 extern osMessageQId  uart4_receive_queue;
 extern osThreadId uart4_send_thread_id;
 extern osThreadId uart4_receive_thread_id; 
+extern osThreadId uart4_current_send_thread_id;
 
 extern uint8_t uart4_frame_start;
 extern uint8_t uart4_receive_timerstart;
@@ -76,11 +80,14 @@ extern uint16_t uart4_receive_datacount;
 #endif
 
 typedef struct {
-		USART_TypeDef* USARTx;
 	  uint16_t Datanum;
     uint8_t Datas[UART_DATATEMP_SIZE];
-} uart_msg_t;
+} uart_receive_msg_t;
 
+typedef struct {
+	  uint16_t Datanum;
+    uint8_t *Datas;
+} uart_send_msg_t;
 //*************************************************************************************************************//
 
 int Init_uart_send_thread (uint32_t argument);
@@ -94,5 +101,8 @@ void uart_receive_thread (void const *argument);                             // 
 //*************************************************************************************************************//
 int SendChar(int ch);
 int GetKey(void);
+void yu_puts(char *datas,uint16_t num);
+void yu_prints(const char *format,const char *str);
+int yu_readline(char *prompt,char *line);
 
 #endif

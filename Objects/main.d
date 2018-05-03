@@ -41,9 +41,11 @@
 .\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\main.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
 .\objects\main.o: .\basic_thread\keythread.h
+.\objects\main.o: .\basic_thread\rtx_signal.h
 .\objects\main.o: .\basic_thread\uartthread.h
 .\objects\main.o: .\bsp\usart.h
 .\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: .\basic_thread\timeoutthread.h
 .\objects\main.o: .\bsp\timer2.h
 .\objects\main.o: .\basic_thread\luathread.h
@@ -54,5 +56,4 @@
 .\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\main.o: .\lua-5.3.4\src\lualib.h
 .\objects\main.o: .\lua-5.3.4\src\lauxlib.h
-.\objects\main.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: user\uarttestthread.h

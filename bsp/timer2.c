@@ -38,7 +38,7 @@ void TIM2_IRQHandler(void)   //10us
 			uart1_receive_timecount = 0;
 			uart1_receive_timerstart = 0;
 			uart1_receive_overtime = 1;
-			osSignalSet(timeout_thread_id,0x01); 
+			osSignalSet(timeout_thread_id,TIME2_TIMEOUT_SIGNAL); 
 		}
 	#endif
 	#ifdef USE_UART2
@@ -51,7 +51,7 @@ void TIM2_IRQHandler(void)   //10us
 			uart2_receive_timecount = 0;
 			uart2_receive_timerstart = 0;
 			uart2_receive_overtime = 1;
-			osSignalSet(timeout_thread_id,0x01); 
+			osSignalSet(timeout_thread_id,TIME2_TIMEOUT_SIGNAL); 
 		}
 	#endif	
 	#ifdef USE_UART3
@@ -64,7 +64,7 @@ void TIM2_IRQHandler(void)   //10us
 			uart3_receive_timecount = 0;
 			uart3_receive_timerstart = 0;
 			uart3_receive_overtime = 1;
-			osSignalSet(timeout_thread_id,0x01); 
+			osSignalSet(timeout_thread_id,TIME2_TIMEOUT_SIGNAL); 
 		}
 	#endif	
 	#ifdef USE_UART4
@@ -77,7 +77,7 @@ void TIM2_IRQHandler(void)   //10us
 			uart4_receive_timecount = 0;
 			uart4_receive_timerstart = 0;
 			uart4_receive_overtime = 1;
-			osSignalSet(timeout_thread_id,0x01); 
+			osSignalSet(timeout_thread_id,TIME2_TIMEOUT_SIGNAL); 
 		}
 	#endif		
 	TIM2->SR &= 0XFFFE; //clear update flag

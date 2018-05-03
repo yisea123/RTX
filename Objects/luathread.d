@@ -12,9 +12,9 @@
 .\objects\luathread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\limits.h
 .\objects\luathread.o: .\lua-5.3.4\src\lualib.h
 .\objects\luathread.o: .\lua-5.3.4\src\lauxlib.h
-.\objects\luathread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
-.\objects\luathread.o: basic_thread\uartthread.h
+.\objects\luathread.o: .\basic_thread\uartthread.h
 .\objects\luathread.o: .\bsp\usart.h
+.\objects\luathread.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\luathread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\luathread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\luathread.o: .\RTE\_project\RTE_Components.h
@@ -48,6 +48,7 @@
 .\objects\luathread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\luathread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\luathread.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
+.\objects\luathread.o: .\basic_thread\rtx_signal.h
 .\objects\luathread.o: basic_thread\keythread.h
 .\objects\luathread.o: .\bsp\key.h
 .\objects\luathread.o: .\basic_thread\keythread.h

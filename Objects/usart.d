@@ -1,6 +1,7 @@
 .\objects\usart.o: bsp\usart.c
 .\objects\usart.o: bsp\usart.h
 .\objects\usart.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usart.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\usart.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\usart.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\usart.o: .\RTE\_project\RTE_Components.h

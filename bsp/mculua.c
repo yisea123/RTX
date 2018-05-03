@@ -8,9 +8,8 @@
 */
 #if !defined(lua_readline)	/* { */
 
-#define lua_readline(L,b,p) \
-        ((void)L, fputs(p, stdout), fflush(stdout),  /* show prompt */ \
-        fgets(b, LUA_MAXINPUT, stdin) != NULL)  /* get line */
+#define lua_readline(L,b,p) ((void)L,yu_readline(p,b))  
+         
 				
 #define lua_saveline(L,line)	{ (void)L; (void)line; }
 #define lua_freeline(L,b)	{ (void)L; (void)b; }
@@ -27,8 +26,9 @@ const char *progname = "lua";
 ** (if present)
 */
 static void l_message (const char *pname, const char *msg) {
-  if (pname) printf("%s: ", pname);
-  printf("%s\n", msg);
+  if (pname) yu_puts((char *)pname,strlen(pname));
+  yu_puts((char *)msg,strlen(msg));
+	yu_puts("\r\n",2);
 }
 
 /*
@@ -137,7 +137,7 @@ static int pushline (lua_State *L, int firstline) {
   char *b = buffer;
   size_t l;
   const char *prmt = get_prompt(L, firstline);
-  int readstatus = lua_readline(L, b, prmt);
+  int readstatus = lua_readline(L, b, (char *)prmt);
   if (readstatus == 0)
     return 0;  /* no input (prompt will be popped by caller) */
   lua_pop(L, 1);  /* remove prompt */
@@ -255,17 +255,18 @@ static void print_version (void) {
 
 void lua_main(void)
 {
+	l_message(" lua:", "welcome");
   lua_State *L = luaL_newstate();  /* create state */
   if (L == NULL) {
-    l_message("lua", "cannot create state: not enough memory\n");
+    l_message("lua", "cannot create state: not enough memory\r\n");
     return ;
   }
 	luaL_openlibs(L);
 	print_version();
 	dostring(L,"print('hello')","Test_lua");
-	//dofile(L, NULL);  /* executes stdin as a file */
-	//doREPL(L);
-	
+//	//dofile(L, NULL);  /* executes stdin as a file */
+	doREPL(L);
+//	
   lua_close(L);
 }
 

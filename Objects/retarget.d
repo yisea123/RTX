@@ -6,6 +6,7 @@
 .\objects\retarget.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\retarget.o: .\basic_thread\uartthread.h
 .\objects\retarget.o: .\bsp\usart.h
+.\objects\retarget.o: C:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\retarget.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\retarget.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h
 .\objects\retarget.o: .\RTE\_project\RTE_Components.h
@@ -40,3 +41,4 @@
 .\objects\retarget.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\retarget.o: C:\Program Files\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\StdPeriph_Driver\inc\misc.h
 .\objects\retarget.o: C:\Program Files\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS\RTX\INC\cmsis_os.h
+.\objects\retarget.o: .\basic_thread\rtx_signal.h

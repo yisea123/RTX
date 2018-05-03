@@ -42,13 +42,13 @@ void KEY_Init(void)
 
 void EXTI1_IRQHandler(void)
 {
-	osSignalSet(key_thread_id,0x01);
+	osSignalSet(key_thread_id,KEY0_PRESSED_SIGNAL);
 	key0_press_falg=1;
 	EXTI->PR = EXTI_Line1;
 }
 void EXTI15_10_IRQHandler(void)
 {
-	osSignalSet(key_thread_id,0x01);
+	osSignalSet(key_thread_id,KEY1_PRESSED_SIGNAL);
 	key1_press_falg=1;
 	EXTI->PR = EXTI_Line13;
 }

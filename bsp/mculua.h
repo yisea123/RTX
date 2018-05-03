@@ -5,6 +5,7 @@
 #include "lualib.h"
 #include "lauxlib.h"
 #include "string.h"
+#include "uartthread.h"   
 
 #define LUA_MAXINPUT		512
 #define LUA_PROMPT		"> "
